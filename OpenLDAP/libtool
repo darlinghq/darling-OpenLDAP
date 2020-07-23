@@ -44,13 +44,13 @@ available_tags=
 
 # ### BEGIN LIBTOOL CONFIG
 
-# Libtool was configured on host kmalhotra.apple.com:
+# Libtool was configured on host ARI-PAVILION:
 
 # Shell to use when invoking shell scripts.
 SHELL="/bin/sh"
 
 # Whether or not to build shared libraries.
-build_libtool_libs=yes
+build_libtool_libs=no
 
 # Whether or not to build static libraries.
 build_old_libs=yes
@@ -66,13 +66,13 @@ fast_install=needless
 
 # The host system.
 host_alias=
-host=x86_64-apple-darwin12.0.0
-host_os=darwin12.0.0
+host=x86_64-apple-darwin19.6.0
+host_os=darwin19.6.0
 
 # The build system.
 build_alias=
-build=x86_64-apple-darwin12.0.0
-build_os=darwin12.0.0
+build=x86_64-apple-darwin19.6.0
+build_os=darwin19.6.0
 
 # An echo program that does not interpret backslashes.
 echo="/bin/echo"
@@ -94,13 +94,13 @@ with_gcc=yes
 EGREP="/usr/bin/grep -E"
 
 # The linker used to build libraries.
-LD="/usr/bin/ld"
+LD="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld"
 
 # Whether we need hard or soft links.
 LN_S="ln -s"
 
 # A BSD-compatible nm program.
-NM="/usr/bin/nm"
+NM="/usr/bin/nm -B"
 
 # A symbol stripping program
 STRIP="strip"
@@ -319,7 +319,7 @@ variables_saved_for_relink="PATH   GCC_EXEC_PREFIX COMPILER_PATH LIBRARY_PATH"
 link_all_deplibs=yes
 
 # Compile-time system search path for libraries
-sys_lib_search_path_spec=" /usr/bin/../lib/clang/4.0  /lib /usr/lib /usr/local/lib"
+sys_lib_search_path_spec=" /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.3  /lib /usr/lib /usr/local/lib"
 
 # Run-time system search path for libraries
 sys_lib_dlsearch_path_spec="/usr/local/lib /lib /usr/lib"
