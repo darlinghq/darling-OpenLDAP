@@ -137,8 +137,8 @@ add_framework(LDAP
 		$<TARGET_OBJECTS:libldap_r>
 		$<TARGET_OBJECTS:liblber>
 	RESOURCES
-		AppleExtras/Resources/Info.plist      Info.plist
-		AppleExtras/Resources/version.plist   version.plist
+		Info.plist    AppleExtras/Resources/Info.plist
+		version.plist AppleExtras/Resources/version.plist
 	DEPENDENCIES
 		sasl
 		CoreFoundation
