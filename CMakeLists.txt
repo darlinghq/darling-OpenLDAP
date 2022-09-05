@@ -135,7 +135,7 @@ set(FRAMEWORK_VERSION "A")
 
 generate_sdk_framework(LDAP
     VERSION ${FRAMEWORK_VERSION}
-    HEADER "include/LDAP"
+    HEADER "darling-framework/include/LDAP"
 )
 
 add_framework(LDAP
