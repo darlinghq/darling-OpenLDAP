@@ -1,5 +1,7 @@
 project(darling-openldap)
 
+remove_sdk_framework(LDAP)
+
 add_compile_definitions(
 	LDAP_RESPONSE_RB_TREE=1
 	LDAP_DEPRECATED=1
@@ -129,9 +131,16 @@ target_compile_definitions(liblber PRIVATE
 	LBER_LIBRARY
 )
 
+set(FRAMEWORK_VERSION "A")
+
+generate_sdk_framework(LDAP
+    VERSION ${FRAMEWORK_VERSION}
+    HEADER "darling-framework/include/LDAP"
+)
+
 add_framework(LDAP
 	CURRENT_VERSION
-	VERSION "A"
+	VERSION ${FRAMEWORK_VERSION}
 
 	OBJECTS
 		$<TARGET_OBJECTS:libldap_r>
