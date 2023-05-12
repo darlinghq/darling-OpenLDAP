@@ -19,7 +19,7 @@ USAGE="$0 [-b <backend>] [-c] [-k] [-l #] [-p] [-s {ro|rp}] [-u] [-w] <script>"
 SRCDIR="."
 TOPSRCDIR=".."
 LN_S="ln -s"
-EGREP_CMD="/usr/bin/grep -E"
+EGREP_CMD="/bin/grep -E"
 
 export SRCDIR TOPSRCDIR LN_S EGREP_CMD
 

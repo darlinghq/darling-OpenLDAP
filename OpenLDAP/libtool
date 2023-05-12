@@ -44,7 +44,7 @@ available_tags=
 
 # ### BEGIN LIBTOOL CONFIG
 
-# Libtool was configured on host ARI-PAVILION:
+# Libtool was configured on host thomas-a-gaming-workstation:
 
 # Shell to use when invoking shell scripts.
 SHELL="/bin/sh"
@@ -91,10 +91,10 @@ CC="cc"
 with_gcc=yes
 
 # An ERE matcher.
-EGREP="/usr/bin/grep -E"
+EGREP="/bin/grep -E"
 
 # The linker used to build libraries.
-LD="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld"
+LD="/Library/Developer/CommandLineTools/usr/bin/ld"
 
 # Whether we need hard or soft links.
 LN_S="ln -s"
@@ -144,7 +144,7 @@ pic_flag=" -fno-common -DPIC"
 pic_mode=default
 
 # What is the maximum length of a command?
-max_cmd_len=196608
+max_cmd_len=1572864
 
 # Does compiler simultaneously support -c and -o options?
 compiler_c_o="yes"
@@ -319,7 +319,7 @@ variables_saved_for_relink="PATH   GCC_EXEC_PREFIX COMPILER_PATH LIBRARY_PATH"
 link_all_deplibs=yes
 
 # Compile-time system search path for libraries
-sys_lib_search_path_spec=" /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.3  /lib /usr/lib /usr/local/lib"
+sys_lib_search_path_spec=" /Library/Developer/CommandLineTools/usr/lib/clang/9.0.0  /lib /usr/lib /usr/local/lib"
 
 # Run-time system search path for libraries
 sys_lib_dlsearch_path_spec="/usr/local/lib /lib /usr/lib"

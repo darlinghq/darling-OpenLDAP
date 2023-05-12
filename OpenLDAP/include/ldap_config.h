@@ -1,4 +1,4 @@
-/* Generated from ./ldap_config.hin on Mon Jul 20 16:37:23 EDT 2020 */
+/* Generated from ./ldap_config.hin on Sun Dec 11 09:31:27 PST 2022 */
 /* $OpenLDAP$ */
 /* This work is part of OpenLDAP Software <http://www.openldap.org/>.
  *
@@ -46,7 +46,7 @@
 
 /* directories */
 #ifndef LDAP_BINDIR
-#define LDAP_BINDIR			"/private/bin"
+#define LDAP_BINDIR			"/usr/local/bin"
 #endif
 #ifndef LDAP_SBINDIR
 #define LDAP_SBINDIR		"/usr/sbin"
@@ -61,7 +61,7 @@
 #define LDAP_LIBEXECDIR		"/usr/libexec"
 #endif
 #ifndef LDAP_MODULEDIR
-#define LDAP_MODULEDIR		"/private/libexec/openldap"
+#define LDAP_MODULEDIR		"/usr/local/libexec/openldap"
 #endif
 #ifndef LDAP_RUNDIR
 #define LDAP_RUNDIR			"/var/run"

@@ -113,7 +113,7 @@
 /* #undef HAVE_CONIO_H */
 
 /* define if crypt(3) is available */
-#define HAVE_CRYPT 1
+/* #undef HAVE_CRYPT */
 
 /* Define to 1 if you have the <crypt.h> header file. */
 /* #undef HAVE_CRYPT_H */
@@ -920,7 +920,7 @@
 /* #undef SLAPD_CLEARTEXT */
 
 /* define to support crypt(3) passwords */
-#define SLAPD_CRYPT 1
+/* #undef SLAPD_CRYPT */
 
 /* define to support DNS SRV backend */
 /* #undef SLAPD_DNSSRV */

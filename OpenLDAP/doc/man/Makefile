@@ -27,7 +27,7 @@ top_builddir = ../..
 srcdir = .
 top_srcdir = ../..
 
-prefix = /private
+prefix = /usr/local
 exec_prefix = ${prefix}
 ldap_subdir = /openldap
 
@@ -37,12 +37,12 @@ includedir = ${prefix}/include
 infodir = ${prefix}/share/info
 libdir = ${exec_prefix}/lib
 libexecdir = ${exec_prefix}/libexec
-localstatedir = /private/var/db/openldap
+localstatedir = ${prefix}/var
 mandir = ${prefix}/share/man
 moduledir = ${exec_prefix}/libexec$(ldap_subdir)
 sbindir = ${exec_prefix}/sbin
 sharedstatedir = ${prefix}/com
-sysconfdir = /private/etc$(ldap_subdir)
+sysconfdir = ${prefix}/etc$(ldap_subdir)
 schemadir = $(sysconfdir)/schema
 
 PLAT = UNIX
@@ -136,7 +136,7 @@ HOSTNAME = $(SHTOOL) echo -e "%h%d"
 LN = $(SHTOOL) mkln
 LN_H = $(LN)
 LN_S = $(LN) -s
-MAKEINFO = ${SHELL} /Users/ariel/git/darling/src/external/OpenLDAP/OpenLDAP/build/missing --run makeinfo
+MAKEINFO = ${SHELL} /Volumes/SystemRoot/home/thomasa/Documents/CodingProjects/Repository/GitHub/darling/src/external/OpenLDAP/OpenLDAP/build/missing --run makeinfo
 MKDIR = $(SHTOOL) mkdir -p
 MV = $(SHTOOL) move
 PWD = pwd
