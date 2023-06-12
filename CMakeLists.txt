@@ -22,6 +22,7 @@ include_directories(
 
 add_compile_options(
 	-fno-common
+	-Wno-error=incompatible-function-pointer-types
 )
 
 add_darling_object_library(libldap_r
