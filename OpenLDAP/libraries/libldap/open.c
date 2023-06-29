@@ -43,6 +43,10 @@
 #include <pthread.h>
 #endif
 
+#if defined(LDAP_CONNECTIONLESS) && defined(DARLING)
+int ldap_is_ldapc_url(LDAP_CONST char *url);
+#endif
+
 /* Caller should hold the req_mutex if simultaneous accesses are possible */
 int ldap_open_defconn( LDAP *ld )
 {
